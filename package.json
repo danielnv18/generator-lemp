@@ -2,12 +2,8 @@
   "name": "generator-lemp",
   "version": "0.0.0",
   "description": "Creates a LEMP enviroment with docker with support to several php projects",
-  "homepage": "",
-  "author": {
-    "name": "Daniel Noyola",
-    "email": "danielnv18@gmail.com",
-    "url": ""
-  },
+  "homepage": "https://github.com/danielnv18/generator-lemp#readme",
+  "author": "Daniel Noyola <danielnv18@gmail.com>",
   "files": [
     "generators"
   ],
@@ -48,10 +44,19 @@
       "mocha": true
     }
   },
-  "repository": "danielnv18/generator-lemp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielnv18/generator-lemp.git"
+  },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielnv18/generator-lemp/issues"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
