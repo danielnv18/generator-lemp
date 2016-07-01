@@ -13,9 +13,13 @@
     "lemp",
     "docker",
     "php",
+    "nginx",
+    "mysql",
     "drupal",
     "symfony",
     "laravel",
+    "silex",
+    "lumen",
     "yeoman-generator"
   ],
   "dependencies": {

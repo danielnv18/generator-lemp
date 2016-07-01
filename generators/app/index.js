@@ -7,14 +7,15 @@ module.exports = yeoman.Base.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the ace ' + chalk.red('generator-lemp') + ' generator!'
+      'Welcome to the ace ' + chalk.red('LEMP') + ' generator!'
     ));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
-      default: true
+      type: 'list',
+      name: 'phpVersion',
+      message: 'Which version of php you like to to use?',
+      choices: ['7.0', '5.6', '5.5'],
+      default: '7.0'
     }];
 
     return this.prompt(prompts).then(function (props) {
