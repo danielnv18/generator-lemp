@@ -45,8 +45,8 @@ module.exports = yeoman.Base.extend({
       this.templatePath('docker-compose.yml'),
       this.destinationPath('docker-compose.yml'),
       {
-        mysqlDatabase : this.props.mysqlDatabase,
-        appName : this.appname
+        mysqlDatabase: this.props.mysqlDatabase,
+        appName: this.appname
       }
     );
 
@@ -54,14 +54,14 @@ module.exports = yeoman.Base.extend({
     this.fs.copyTpl(
       this.templatePath('nginx/Dockerfile'),
       this.destinationPath('nginx/Dockerfile'),
-      { projectType : this.props.projectType }
+      {projectType: this.props.projectType}
     );
     this.fs.copyTpl(
       this.templatePath('nginx/lemp.conf'),
       this.destinationPath('nginx/' + this.props.projectType + '.conf'),
       {
-        projectType : this.props.projectType,
-        appName : this.appname
+        projectType: this.props.projectType,
+        appName: this.appname
       }
     );
     this.fs.copy(
@@ -74,14 +74,14 @@ module.exports = yeoman.Base.extend({
       this.templatePath('php/Dockerfile'),
       this.destinationPath('php/Dockerfile'),
       {
-        projectType : this.props.projectType,
-        phpVersion : this.props.phpVersion
+        projectType: this.props.projectType,
+        phpVersion: this.props.phpVersion
       }
     );
     this.fs.copyTpl(
       this.templatePath('php/lemp.pool.conf'),
       this.destinationPath('php/' + this.props.projectType + '.pool.conf'),
-      { projectType : this.props.projectType }
+      {projectType: this.props.projectType}
     );
     this.fs.copy(
       this.templatePath('php/php.ini'),
