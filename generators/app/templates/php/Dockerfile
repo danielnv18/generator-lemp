@@ -27,7 +27,7 @@ RUN { \
 
 <% if (phpVersion == '7.0') { %>
 ADD <%= projectType %>.pool.conf /etc/php/7.0/fpm/pool.d/
-<% } else {
+<% } else { %>
 ADD <%= projectType %>.pool.conf /etc/php5/fpm/pool.d/
 <% } %>
 

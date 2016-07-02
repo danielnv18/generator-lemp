@@ -12,7 +12,7 @@ describe('generator-lemp:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'dummyfile.txt'
+      'docker-compose.yml'
     ]);
   });
 });
