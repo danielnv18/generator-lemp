@@ -141,5 +141,4 @@ describe('generator-lemp:app', function () {
       ]);
     });
   });
-
 });
