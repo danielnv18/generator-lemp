@@ -4,7 +4,7 @@ var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
 
 describe('generator-lemp:app', function () {
-  describe('LEMP enviroment for drupal using php 7', function () {
+  describe('LEMP enviroment for drupal using php 7.0', function () {
     before(function () {
       return helpers.run(path.join(__dirname, '../generators/app'))
         .withPrompts({
@@ -73,7 +73,7 @@ describe('generator-lemp:app', function () {
     });
   });
 
-  describe('LEMP enviroment for symfony using php 7', function () {
+  describe('LEMP enviroment for symfony using php 7.0', function () {
     before(function () {
       return helpers.run(path.join(__dirname, '../generators/app'))
         .withPrompts({
