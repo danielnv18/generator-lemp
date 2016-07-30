@@ -89,9 +89,13 @@ module.exports = yeoman.Base.extend({
     );
 
     // Readme file
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('README.md'),
-      this.destinationPath('README.md')
+      this.destinationPath('README.md'),
+      {
+        projectType: this.props.projectType,
+        appName: this.appname
+      }
     );
   }
 });
