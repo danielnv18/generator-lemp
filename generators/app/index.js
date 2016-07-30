@@ -87,5 +87,11 @@ module.exports = yeoman.Base.extend({
       this.templatePath('php/php.ini'),
       this.destinationPath('php/php.ini')
     );
+
+    // Readme file
+    this.fs.copy(
+      this.templatePath('README.md'),
+      this.destinationPath('README.md')
+    );
   }
 });
