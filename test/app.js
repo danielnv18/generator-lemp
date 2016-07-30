@@ -23,7 +23,7 @@ describe('generator-lemp:app', function () {
         'php/Dockerfile',
         'php/drupal.pool.conf',
         'php/php.ini',
-        'README.MD'
+        'README.md'
       ]);
     });
   });
@@ -47,7 +47,7 @@ describe('generator-lemp:app', function () {
         'php/Dockerfile',
         'php/drupal.pool.conf',
         'php/php.ini',
-        'README.MD'
+        'README.md'
       ]);
     });
   });
@@ -71,7 +71,7 @@ describe('generator-lemp:app', function () {
         'php/Dockerfile',
         'php/drupal.pool.conf',
         'php/php.ini',
-        'README.MD'
+        'README.md'
       ]);
     });
   });
@@ -95,7 +95,7 @@ describe('generator-lemp:app', function () {
         'php/Dockerfile',
         'php/symfony.pool.conf',
         'php/php.ini',
-        'README.MD'
+        'README.md'
       ]);
     });
   });
@@ -119,7 +119,7 @@ describe('generator-lemp:app', function () {
         'php/Dockerfile',
         'php/symfony.pool.conf',
         'php/php.ini',
-        'README.MD'
+        'README.md'
       ]);
     });
   });
@@ -143,7 +143,7 @@ describe('generator-lemp:app', function () {
         'php/Dockerfile',
         'php/symfony.pool.conf',
         'php/php.ini',
-        'README.MD'
+        'README.md'
       ]);
     });
   });
