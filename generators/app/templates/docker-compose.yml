@@ -14,7 +14,7 @@ services:
         expose:
             - "9000"
         volumes:
-            - ./src:/var/www/<%= appName %>
+            - ./docroot:/var/www/<%= appName %>
         links:
             - db
     nginx:
