@@ -10,7 +10,7 @@ Here goes you project description
 ## Installation
 Next, put your <%= projectType %> application into `docroot` folder and do not forget to add `<%= appName %>.dev` in your `hosts` file.
 
-Make sure you adjust `database_host` in your condiguration file to the database container alias "db"
+Make sure you adjust `database_host` in your configuration file to the database container alias "db"
 
 Then, run:
 

@@ -9,6 +9,8 @@ services:
             MYSQL_DATABASE: <%= mysqlDatabase %>
             MYSQL_USER: root
             MYSQL_PASSWORD: root
+        volumes:
+            - ./mysql:/var/lib/mysql
     php:
         build: ./php
         expose:
@@ -16,7 +18,7 @@ services:
         volumes:
             - ./docroot:/var/www/<%= appName %>
         links:
-            - db
+            - db:mysql
     nginx:
         build: ./nginx
         ports:
